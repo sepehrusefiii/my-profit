@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>هتل</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstraprtl.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--imagehover-->
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <!--owl carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!--my style-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--datepicker-->
+    <link rel="stylesheet" href="css/persian-date.css">
+</head>
+
+<body>
+    <!--======start loader page=====-->
+    <div class="loader-container p_loader">
+        <div class="loader-logo">
+            <div class="loader-circle"></div>
+        </div>
+    </div>
+    <!--======End loader page=====-->
+    <div class="parent_page"></div>
+    <div class="container-fluid">
+        <header>
+            <div id="particles-js">
+                <!--start nav side-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">خانه</a>
+                    <a href="#">تماس با ما</a>
+                    <a href="#">خدمات</a>
+                    <a href="#">اتاق‌ها</a>
+                    <a href="#">وبلاگ</a>
+                </div>
+                <!-- start header -->
+                <div class="main-header bg-dark">
+                    <div class="container">
+                        <div class="row p-2">
+                            <div class="col-6 language">
+                                <span class="text-white border mx-1 my-2 p-1 px-2 fn_12">
+                                    FA
+                                </span>
+                                <span class="text-white border radius mx-1 my-2 p-1 px-2 fn_12">
+                                    EN
+                                </span>
+                                <span class="text-white border radius mx-1 my-2 p-1 px-2 fn_12">
+                                    AR
+                                    <img src="img/logo (1).png" class="d-none">
+                                </span>
+                            </div>
+                            <div class="text-white col-6 text-right">
+                                <i class="fa fa-phone text-white"></i>
+                                05131234567
+                                <span
+                                    class="d-lg-none  text-white border radius  my-2 p-0 px-2 fn_12 nastaligh bg-warning">رزرواسیون
+                                    آنلاین</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header -->
+                <!---stard menu---->
+                <div id="menu-bottom" class="bg_nav header_f2">
+                    <div class="container">
+                        <div class="row">
+                            <div id="menu" class="col-lg-8 col-sm-4 mt-2">
+                                <section class="color-6 text-left">
+                                    <nav class="cl-effect-13 d-lg-block d-sm-none d-none" id="cl-effect-13">
+                                        <a class="px-3 py-4 position-relative" href="#">خانه</a>
+                                        <a class="px-3 py-4 position-relative" href="#">تماس با ما</a>
+                                        <a class="px-3 py-4 position-relative" href="#">درباره ما</a>
+                                        <a class="px-3 py-4 position-relative" href="#">خدمات</a>
+                                        <a class="px-3 py-4 position-relative" href="#">اتاق‌ها</a>
+                                        <a class="px-3 py-4 position-relative" href="#">وبلاگ</a>
+                                        <span class="px-3 py-4 position-relative" href="#">
+                                            <button class="p-1 qx-btn text-light bottomMenu">
+                                                <span class="fa fa-concierge-bell text-light bell"></span>
+                                                رزرواسیون آنلاین
+                                            </button>
+                                        </span>
+                                    </nav>
+                                    <nav class="d-lg-none d-sm-block">
+                                        <a class="" onclick="openNav()">
+                                            <div class="px-3 x">
+                                                <div class="bar1"></div>
+                                                <div class="bar2"></div>
+                                                <div class="bar3"></div>
+                                            </div>
+                                        </a>
+                                    </nav>
+                                </section>
+                            </div>
+                            <div class="col-sm-4 mt-4 d-sm-block d-lg-none d-none">
+                                <button class="p-1 qx-btn text-light bottomMenu">
+                                    <span class="fa fa-concierge-bell text-light bell"></span>
+                                    رزرواسیون آنلاین
+                                </button>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 text-right py-2">
+                                <img id="logo" src="./img/logo (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---end menu---->
+                <div class="w-50 box_reserve pos_rel d-lg-block d-md-block d-sm-none d-none">
+                    <form>
+                        <div class="form-group">
+                            <label><span class="fa fa-star text-warning"></span> شعب هتل </label>
+                            <input type="text" class="form-control origin"
+                                placeholder="شهر یا هتل مورد نظر را انتخاب کنید">
+                            <div class="drop_box wow fadeInDown ">
+                                <ul class="selects s_box box">
+                                    <li value="mashad">
+                                        <input type="hidden" value="مشهد">
+                                        <img src="./img/icons8-airport-80.png" alt="" class="airplane">
+                                        <div class="info_airplane">
+                                            <span class="city">مشهد</span>
+                                            <span>فرودگاه</span>
+                                            <span class="favorite_box">پرطرفدار</span>
+                                            <div class="ml-4">
+                                                <i class="fa fa-car"></i>
+                                                <small> تا مرکز شهر 20 دقیقه</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li value="tehran">
+                                        <img src="./img/icons8-airport-80.png" alt="" class="airplane">
+                                        <div class="info_airplane">
+                                            <span class="city">تهران</span>
+                                            <span>فرودگاه</span>
+                                            <span class="favorite_box">پرطرفدار</span>
+                                            <div class="ml-4">
+                                                <i class="fa fa-car"></i>
+                                                <small> تا مرکز شهر 20 دقیقه</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li value="tabriz">
+                                        <img src="./img/icons8-airport-80.png" alt="" class="airplane">
+                                        <div class="info_airplane">
+                                            <span class="city">تبریز</span>
+                                            <span>فرودگاه</span>
+                                            <span class="favorite_box">پرطرفدار</span>
+                                            <div class="ml-4">
+                                                <i class="fa fa-car"></i>
+                                                <small> تا مرکز شهر 20 دقیقه</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li value="esfehan">
+                                        <img src="./img/icons8-airport-80.png" alt="" class="airplane">
+                                        <div class="info_airplane">
+                                            <span class="city">اصفهان</span>
+                                            <span>فرودگاه</span>
+                                            <span class="favorite_box">پرطرفدار</span>
+                                            <div class="ml-4">
+                                                <i class="fa fa-car"></i>
+                                                <small> تا مرکز شهر 20 دقیقه</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label>تاریخ ورود</label>
+                                <input type="text" class="form-control datepicker" placeholder="First name">
+                            </div>
+                            <div class="col-6">
+                                <label>تاریخ خروج</label>
+                                <input type="text" class="form-control datepicker" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="mt-2 text-right">
+                            <button class="p-3 qx-btn text-light">
+                                <span class="fa fa-concierge-bell text-light bell"></span>
+                                رزرواسیون آنلاین
+                            </button>
+                            <button class="btn_search p-3">
+                                <span class="fa fa-search text-light"></span>
+                                جستجو
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!--distance from important place-->
+
+            </div>
+            <div class="mb-5 d-flex counter_box">
+                <div class="distance">
+                    <p><i class="fa fa-bus"></i></p>
+                    <span class="count">200</span><sub>km</sub>
+                    <p class="fn_12">فاصله تا ترمینال</p>
+                </div>
+                <div class="distance">
+                    <p><i class="fa fa-plane"></i></p>
+                    <span class="count">1000</span><sub>km</sub>
+                    <p class="fn_12">فاصله تا فرودگاه</p>
+                </div>
+                <div class="distance">
+                    <p><i class="fa fa-mosque"></i></p>
+                    <span class="count">853</span><sub>km</sub>
+                    <p class="fn_12">فاصله تا حرم</p>
+                </div>
+                <div class="distance">
+                    <p><i class="fa fa-car"></i></p>
+                    <span class="count">154</span><sub>km</sub>
+                    <p class="fn_12">فاصله تا ترانسفر شخصی</p>
+                </div>
+                <div class="distance">
+                    <p><i class="fa fa-city"></i></p>
+                    <span class="count">10</span><sub>km</sub>
+                    <p class="fn_12">فاصله تامرکز شهر</p>
+                </div>
+                <div class="distance">
+                    <p><i class="fa fa-train"></i></p>
+                    <span class="count">87</span><sub>km</sub>
+                    <p class="fn_12">فاصله تا راه آهن</p>
+                </div>
+            </div>
+        </header>
+
+    </div>
+    <!----End header section-->
+    <!--start section2//rooms/restaurant//masazh-->
+    <div class="container-fluid  text-center">
+        <div class="container mt-5">
+            <div class="position-relative my-5">
+                <div class="title_abt d-lg-block d-md-none d-sm-none d-none">
+                    <span>اتاق‌ها</span>
+                    <h2>
+                        اتاق ها متناسب با علایق و نیاز میهمانان گرامی دسته بندی گردیده است
+                    </h2>
+                </div>
+                <div class="d-lg-block d-md-none d-sm-none d-none">
+                    <img src="./img/title2.png" class="image-responsive flower_under_title">
+                </div>
+            </div>
+            <!--for small page-->
+            <div class="small_title text-left d-lg-none d-sm-block">
+                <span>اتاق‌ها</span>
+                <h2>
+                    اتاق ها متناسب با علایق و نیاز میهمانان گرامی دسته بندی گردیده است
+                </h2>
+            </div>
+            <!--owl-->
+            <!-- Set up your HTML -->
+            <!-- rooms----------------->
+            <div class="owl-carousel my-2">
+                <div class="box_rooms">
+                    <figure class="imghvr-shutter-in-horiz">
+                        <img src="./img/room/room1.jpg">
+                        <figcaption>
+                            <span class="">ظرفیت اتاق: 1</span>
+                            <br />
+                            <p class="">اتاق های امین</p>
+                            <div>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                            <br />
+                            <button class="btn btn_gold">تماشا</button>
+                        </figcaption>
+                        <a href="#"></a>
+                    </figure>
+                    <div class="text_box px-2">
+                        <h5 class="title text-left">اتاق‌های لوکس</h5>
+                        <div class="text">
+
+                            <div>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+
+                        </div>
+                        <div class="facilities">
+                            <ul>
+
+                                <li><i class="fa fa-cutlery"></i> بوفه صبحانه رایگان</li>
+
+                                <li><i class="fa fa-wifi"></i> اینترنت رایگان</li>
+
+                                <li><i class="fa fa-tv"></i> تلویزیون هوشمند</li>
+
+                                <li><i class="fa fa-bath"></i> حمام و سشوار</li>
+
+                                <li><i class="fa fa-coffee"></i> مینی بار</li>
+
+                                <li><i class="fa fa-taxi"></i> ترانسفر و بدرقه</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_rooms">
+                    <figure class="imghvr-shutter-in-horiz">
+                        <img src="./img/room/room2.jpg">
+                        <figcaption>
+                            <span class="">ظرفیت اتاق: 1</span>
+                            <br />
+                            <p class="">اتاق های دابل</p>
+                            <div>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                            <br />
+                            <button class="btn btn_gold">تماشا</button>
+                        </figcaption>
+                        <a href="#"></a>
+                    </figure>
+                    <div class="text_box px-2">
+                        <h5 class="title text-left">اتاق‌های لوکس</h5>
+                        <div class="text">
+                            <div>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                        </div>
+                        <div class="facilities">
+                            <ul>
+
+                                <li><i class="fa fa-cutlery"></i> بوفه صبحانه رایگان</li>
+
+                                <li><i class="fa fa-wifi"></i> اینترنت رایگان</li>
+
+                                <li><i class="fa fa-tv"></i> تلویزیون هوشمند</li>
+
+                                <li><i class="fa fa-bath"></i> حمام و سشوار</li>
+
+                                <li><i class="fa fa-coffee"></i> مینی بار</li>
+
+                                <li><i class="fa fa-taxi"></i> ترانسفر و بدرقه</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_rooms">
+                    <figure class="imghvr-shutter-in-horiz">
+                        <img src="./img/room/room3.jpg">
+                        <figcaption>
+                            <span class="">ظرفیت اتاق: 1</span>
+                            <br />
+                            <p class="">اتاق های کلاسیک</p>
+                            <div>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                            <br />
+                            <button class="btn btn_gold">تماشا</button>
+                        </figcaption>
+                        <a href="#"></a>
+                    </figure>
+                    <div class="text_box px-2">
+                        <h5 class="title text-left">اتاق‌های لوکس</h5>
+                        <div class="text">
+                            <div>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                        </div>
+                        <div class="facilities">
+                            <ul>
+
+                                <li><i class="fa fa-cutlery"></i> بوفه صبحانه رایگان</li>
+
+                                <li><i class="fa fa-wifi"></i> اینترنت رایگان</li>
+
+                                <li><i class="fa fa-tv"></i> تلویزیون هوشمند</li>
+
+                                <li><i class="fa fa-bath"></i> حمام و سشوار</li>
+
+                                <li><i class="fa fa-coffee"></i> مینی بار</li>
+
+                                <li><i class="fa fa-taxi"></i> ترانسفر و بدرقه</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_rooms">
+                    <figure class="imghvr-shutter-in-horiz">
+                        <img src="./img/room/room4.jpg">
+                        <figcaption>
+                            <span class="">ظرفیت اتاق: 1</span>
+                            <br />
+                            <p class="">اتاق های فیونسه</p>
+                            <div>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                            <br />
+                            <button class="btn btn_gold">تماشا</button>
+                        </figcaption>
+                        <a href="#"></a>
+                    </figure>
+                    <div class="text_box px-2">
+                        <h5 class="title text-left">اتاق‌های لوکس</h5>
+                        <div class="text">
+                            <div>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                        </div>
+                        <div class="facilities">
+                            <ul>
+
+                                <li><i class="fa fa-cutlery"></i> بوفه صبحانه رایگان</li>
+
+                                <li><i class="fa fa-wifi"></i> اینترنت رایگان</li>
+
+                                <li><i class="fa fa-tv"></i> تلویزیون هوشمند</li>
+
+                                <li><i class="fa fa-bath"></i> حمام و سشوار</li>
+
+                                <li><i class="fa fa-coffee"></i> مینی بار</li>
+
+                                <li><i class="fa fa-taxi"></i> ترانسفر و بدرقه</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_rooms">
+                    <figure class="imghvr-shutter-in-horiz">
+                        <img src="./img/room/room5.jpg">
+                        <figcaption>
+                            <span class="">ظرفیت اتاق: 2</span>
+                            <br />
+                            <p class="">اتاق های ساحلی</p>
+                            <div>
+                                <del>230,000 <sub>ت</sub></del>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                            <br />
+                            <button class="btn btn_gold">تماشا</button>
+                        </figcaption>
+                        <a href="#"></a>
+                    </figure>
+                    <div class="text_box px-2">
+                        <h5 class="title text-left">اتاق‌های لوکس</h5>
+                        <div class="text">
+                            <div>
+                                <del>230,000 <sub>ت</sub></del>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                        </div>
+                        <div class="facilities">
+                            <ul>
+
+                                <li><i class="fa fa-cutlery"></i> بوفه صبحانه رایگان</li>
+
+                                <li><i class="fa fa-wifi"></i> اینترنت رایگان</li>
+
+                                <li><i class="fa fa-tv"></i> تلویزیون هوشمند</li>
+
+                                <li><i class="fa fa-bath"></i> حمام و سشوار</li>
+
+                                <li><i class="fa fa-coffee"></i> مینی بار</li>
+
+                                <li><i class="fa fa-taxi"></i> ترانسفر و بدرقه</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_rooms">
+                    <figure class="imghvr-shutter-in-horiz">
+                        <img src="./img/room/room6.jpg">
+                        <figcaption>
+                            <span class="">ظرفیت اتاق: 2</span>
+                            <br />
+                            <p class="">اتاق های ویولت</p>
+                            <div>
+                                <del>230,000 <sub>ت</sub></del>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                            <br />
+                            <button class="btn btn_gold">تماشا</button>
+                        </figcaption>
+                        <a href="#"></a>
+                    </figure>
+                    <div class="text_box px-2">
+                        <h5 class="title text-left">اتاق‌های لوکس</h5>
+                        <div class="text">
+                            <div>
+                                <del>230,000 <sub>ت</sub></del>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                        </div>
+                        <div class="facilities">
+                            <ul>
+
+                                <li><i class="fa fa-cutlery"></i> بوفه صبحانه رایگان</li>
+
+                                <li><i class="fa fa-wifi"></i> اینترنت رایگان</li>
+
+                                <li><i class="fa fa-tv"></i> تلویزیون هوشمند</li>
+
+                                <li><i class="fa fa-bath"></i> حمام و سشوار</li>
+
+                                <li><i class="fa fa-coffee"></i> مینی بار</li>
+
+                                <li><i class="fa fa-taxi"></i> ترانسفر و بدرقه</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_rooms">
+                    <figure class="imghvr-shutter-in-horiz">
+                        <img src="./img/room/room7.jpg">
+                        <figcaption>
+                            <span class="">ظرفیت اتاق: 1</span>
+                            <br />
+                            <p class="">اتاق های سوپر لاکچری</p>
+                            <div>
+                                <del>230,000 <sub>ت</sub></del>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                            <br />
+                            <button class="btn btn_gold">تماشا</button>
+                        </figcaption>
+                        <a href="#"></a>
+                    </figure>
+                    <div class="text_box px-2">
+                        <h5 class="title text-left">اتاق‌های لوکس</h5>
+                        <div class="text">
+                            <div>
+                                <del>230,000 <sub>ت</sub></del>
+                                <span>200,000 <sub>ت</sub></span>
+                            </div>
+                        </div>
+                        <div class="facilities">
+                            <ul>
+
+                                <li><i class="fa fa-cutlery"></i> بوفه صبحانه رایگان</li>
+
+                                <li><i class="fa fa-wifi"></i> اینترنت رایگان</li>
+
+                                <li><i class="fa fa-tv"></i> تلویزیون هوشمند</li>
+
+                                <li><i class="fa fa-bath"></i> حمام و سشوار</li>
+
+                                <li><i class="fa fa-coffee"></i> مینی بار</li>
+
+                                <li><i class="fa fa-taxi"></i> ترانسفر و بدرقه</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+
+            <!--restaurant---------->
+            <div class="row my-3">
+                <div class="col-lg-6">
+                    <div class="owl-control owl-carousel">
+                        <div class="box_rooms">
+                            <figure class="imghvr-shutter-in-vert">
+                                <img src="./img/res/res3.jpg">
+                                <figcaption>
+
+                                    <div>
+                                        <h3 class="my-5">کافی شاپ</h3>
+                                    </div>
+                                    <br />
+                                    <!-- <button class="btn btn_gold">تماشا</button> -->
+                                </figcaption>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="box_rooms">
+                            <figure class="imghvr-shutter-in-vert">
+                                <img src="./img/res/res4.png">
+                                <figcaption>
+                                    <div>
+                                        <h3 class="my-5">سالن غذای ایتالیایی</h3>
+                                    </div>
+
+                                </figcaption>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="">
+                        <div class=" position-relative mb-4 text-left">
+                            <span class="d-block  title_abt_f2">رستورانها</span>
+                            <img src="./img/title2.png" class="image-responsive flower_under_title_f2">
+                        </div>
+
+                        <p class="text-secondary text-justify ">
+                            سرو انواع پیش غذاها به صورت بوفه اعم از سوپ ، سالاد و بوفه نوشیدنی و بوفه دسر استثنایی
+                            قصر طلایی که شامل انواع شیرینی، بستنی ها، میوه های متنوع فصل و آب میوه های طبیعی و چای و
+                            قهوه و غیره می باشد، فرصتی برای داشتن یک وعده غذایی با شکوه در یک محیط بی نظیر را برای
+                            شما مهیا کرده است
+                        </p>
+                        <div class="">
+                            <img src="./img/title2.png" class="image-responsive flower_under_text_f1">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="clear mt-3">
+                        <button class="btn btn_gold p-2"><span class="fa fa-drumstick-bite text-dark"></span>
+                            رستورانها</button>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <!--options------->
+            <div class="row my-3">
+                <div class="col-lg-6">
+                    <div class="">
+                        <div class=" position-relative mb-4 text-left">
+                            <span class="d-block  title_abt_f2">اسپا و مجموعه آبی</span>
+                            <img src="./img/title2.png" class="image-responsive flower_under_title_f2">
+                        </div>
+
+                        <p class="text-secondary text-justify">
+                            سرو انواع پیش غذاها به صورت بوفه اعم از سوپ ، سالاد و بوفه نوشیدنی و بوفه دسر استثنایی
+                            قصر طلایی که شامل انواع شیرینی، بستنی ها، میوه های متنوع فصل و آب میوه های طبیعی و چای و
+                            قهوه و غیره می باشد، فرصتی برای داشتن یک وعده غذایی با شکوه در یک محیط بی نظیر را برای
+                            شما مهیا کرده است
+                        </p>
+                        <div class="">
+                            <img src="./img/title2.png" class="image-responsive flower_under_text_f1">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="clear my-3">
+                        <button class="btn btn_gold p-2">
+                            <span class="fa fa-hotel text-dark"></span>
+                            مجموعه
+                            رفاهی
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="owl-control owl-carousel">
+                        <div class="box_rooms">
+                            <figure class="imghvr-shutter-in-vert">
+                                <img src="./img/res/mszh1.jpg">
+                                <figcaption>
+
+                                    <div>
+                                        <h3 class="my-5">اسپا و ماساژ</h3>
+                                    </div>
+                                    <br />
+                                    <!-- <button class="btn btn_gold">تماشا</button> -->
+                                </figcaption>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="box_rooms">
+                            <figure class="imghvr-shutter-in-vert">
+                                <img src="./img/res/mszh2.jpeg">
+                                <figcaption>
+                                    <div>
+                                        <h3 class="my-5">حمام ترکی</h3>
+                                    </div>
+
+                                </figcaption>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="box_rooms">
+                            <figure class="imghvr-shutter-in-vert">
+                                <img src="./img/res/pool.jpg">
+                                <figcaption>
+                                    <div>
+                                        <h3 class="my-5">سالن روباز</h3>
+                                    </div>
+
+                                </figcaption>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="box_rooms">
+                            <figure class="imghvr-shutter-in-vert">
+                                <img src="./img/res/pool3.jpg">
+                                <figcaption>
+                                    <div>
+                                        <h3 class="my-5">استخر شرقی</h3>
+                                    </div>
+
+                                </figcaption>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <hr /> -->
+            <!--container-->
+        </div>
+    </div>
+    <!--services-->
+    <div class="container-fluid">
+        <div class="bg-light">
+            <div class="services">
+                <div class="main_section categories_view1_full">
+                    <span class="light_transparent"></span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="services_title_view1">
+                                    <div class="position-relative my-3">
+                                        <div class="title_abt d-lg-block d-md-none d-sm-none d-none">
+                                            <span>خدمات</span>
+                                            <h2 class="text-light">
+                                                اتاق ها متناسب با علایق و نیاز میهمانان گرامی دسته بندی گردیده است
+                                            </h2>
+                                        </div>
+                                        <div class="d-lg-block d-md-none d-sm-none d-none">
+                                            <img src="./img/title2.png" class="image-responsive flower_under_title">
+                                        </div>
+                                    </div>
+                                    <!--for small page-->
+                                    <div class="small_title text-left d-lg-none d-sm-block">
+                                        <span>خدمات</span>
+                                        <h2 class="text-light">
+                                            اتاق ها متناسب با علایق و نیاز میهمانان گرامی دسته بندی گردیده است
+                                        </h2>
+                                    </div>
+                                </div>
+                                <!-- FancyTitle -->
+                                <!-- Categories List services-->
+                                <div class="categories categories_view1">
+                                    <ul class="row owl-carousel">
+                                        <li class="col-md-4 ">
+                                            <div class="categories_view1_wrap">
+                                                <i class="fa fa-coffee"></i>
+                                                <a href="#" class="text-dark">
+                                                    امکانات غذایی
+                                                </a>
+                                                <small>
+                                                    بوفه صبحانه ،کافی شاپ، و رستوران
+                                                </small>
+                                                <span>01</span>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4">
+                                            <div class="categories_view1_wrap">
+                                                <i class="fa fa-concierge-bell"></i>
+                                                <a href="#" class="text-dark">
+                                                    رزرو 24 ساعته
+                                                </a>
+                                                <small>
+                                                    برای شما
+                                                </small>
+                                                <span>02</span>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4">
+                                            <div class="categories_view1_wrap">
+                                                <i class="fa fa-bus"></i>
+                                                <a href="#" class="text-dark">
+                                                    سرویس‌های گردشی
+                                                </a>
+                                                <small>
+                                                    ترانسفر(گروهی ، شخصی)
+                                                </small>
+                                                <span>03</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="row owl-carousel">
+                                        <li class="col-md-4">
+                                            <div class="categories_view1_wrap">
+                                                <i class="fa fa-swimmer"></i>
+                                                <a href="#" class="text-dark">
+                                                    تفریحی
+                                                </a>
+                                                <small>
+                                                    اسپا و ماساژ
+                                                </small>
+                                                <span>04</span>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4">
+                                            <div class="categories_view1_wrap">
+                                                <i class="fa fa-credit-card"></i>
+                                                <a href="#" class="text-dark">
+                                                    پرداخت آنلاین
+                                                </a>
+                                                <small>
+                                                    راحت پرداخت کنید
+                                                </small>
+                                                <span>05</span>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4">
+                                            <div class="categories_view1_wrap">
+                                                <i class="fa fa-hotel"></i>
+                                                <a href="#" class="text-dark">
+                                                    اتاق‌های لوکس
+                                                </a>
+                                                <small>
+                                                    انواع اتاق‌ها
+                                                </small>
+                                                <span>06</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--End Categories List -->
+                                <div class="more-spacer"></div>
+                                <div class="main_load_btn">
+                                    <a href="#">
+                                        بررسی سایر امکانات
+                                        <i class="fa fa-arrow-left"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ./Tabs -->
+            </div>
+        </div>
+        <!-- <hr /> -->
+        <!--social offer-->
+        <div class="container mt-5">
+            <div class="position-relative my-5">
+                <div class="title_abt d-lg-block d-md-none d-sm-none d-none text-center">
+                    <span>پکیج‌ها</span>
+                    <h2>
+                        اتاق ها متناسب با علایق و نیاز میهمانان گرامی دسته بندی گردیده است
+                    </h2>
+                </div>
+                <div class="d-lg-block d-md-none d-sm-none d-none">
+                    <img src="./img/title2.png" class="image-responsive flower_under_title">
+                </div>
+            </div>
+            <!--for small page-->
+            <div class="small_title text-left d-lg-none d-sm-block">
+                <span>اتاق‌ها</span>
+                <h2>
+                    اتاق ها متناسب با علایق و نیاز میهمانان گرامی دسته بندی گردیده است
+                </h2>
+            </div>
+            <div class="row h-100 mb-5">
+                <div class="col-sm-6 col-md-3 social_offer_box  text-center">
+                    <div class="sale_box two">
+                        <span class="on_sale title_shop">تا 3 روز دیگر </span>
+                    </div>
+                    <div class="">
+                        <span class="fa fa-circle text-light"></span>
+                    </div>
+                    <div class="social_offer_title">
+                        <h4 class="m-2">پکیج‌های تولد</h4>
+                    </div>
+                    <div class="social_persent image_offer1">
+                        <figure class="imghvr-push-up">
+                            <img src="./img/res/hbd3.jpg" height="150px">
+                            <figcaption class="p-1">
+                                <div class="text-justify">
+                                    <h3 class="text-secondary">پکیج تولد</h3>
+                                    <!-- <span>50%</span> -->
+                                    <p class="fn_12">
+                                        خاطرات سالروز تولدتان را در هتل مجلل درویشی ماندگار سازید. این طرح ویژه
+                                        میهمانانی می باشد که
+                                        تاریخ اقامت آنها مصادف با سالروز تولد آنها باشد.
+                                    </p>
+                                    <div>
+
+                                    </div>
+                                    <br />
+                            </figcaption>
+                            <a href="#" class="text-dark"></a>
+                        </figure>
+                    </div>
+                    <div class="">
+                        <button class="btn text-dark">جزییات بیشتر</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 social_offer_box  text-center">
+                    <div class="sale_box two">
+                        <span class="on_sale title_shop">تا 3 روز دیگر </span>
+                    </div>
+                    <div class="">
+                        <span class="fa fa-circle text-light"></span>
+                    </div>
+                    <div class="social_offer_title">
+                        <h4 class="m-2">پکیج‌های عروسی</h4>
+                    </div>
+                    <div class="social_persent image_offer1">
+                        <figure class="imghvr-push-up">
+                            <img src="./img/res/wed2.jpg" height="150px">
+                            <figcaption class="p-1">
+                                <div class="text-justify">
+                                    <h3 class="text-secondary">پکیج عروسی</h3>
+                                    <!-- <span>50%</span> -->
+                                    <p class="fn_12">
+                                        خاطرات سالروز تولدتان را در هتل مجلل درویشی ماندگار سازید. این طرح ویژه
+                                        میهمانانی می باشد که
+                                        تاریخ اقامت آنها مصادف با سالروز تولد آنها باشد.
+                                    </p>
+                                    <div>
+
+                                    </div>
+                                    <br />
+                                    <!-- <button class="btn btn_gold">تماشا</button> -->
+                            </figcaption>
+                            <a href="#">50%</a>
+                        </figure>
+                    </div>
+                    <div class="">
+                        <button class="btn text-dark">جزییات بیشتر</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 social_offer_box  text-center">
+                    <div class="sale_box two">
+                        <span class="on_sale title_shop">تا 3 روز دیگر </span>
+                    </div>
+                    <div class="">
+                        <span class="fa fa-circle text-light"></span>
+                    </div>
+                    <div class="social_offer_title">
+                        <h4 class="m-2">رزرواسیون آنلاین</h4>
+                    </div>
+                    <div class="social_persent image_offer1">
+                        <figure class="imghvr-push-up">
+                            <img src="./img/res/book-online2.jpg" height="150px">
+                            <figcaption class="p-1">
+                                <div class="text-justify">
+                                    <h3 class="text-secondary">رزرواسیون آنلاین</h3>
+                                    <!-- <span>50%</span> -->
+                                    <p class="fn_12">
+                                        خاطرات سالروز تولدتان را در هتل مجلل درویشی ماندگار سازید. این طرح ویژه
+                                        میهمانانی می باشد که
+                                        تاریخ اقامت آنها مصادف با سالروز تولد آنها باشد.
+                                    </p>
+                                    <div>
+
+                                    </div>
+                                    <br />
+                                    <!-- <button class="btn btn_gold">تماشا</button> -->
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="">
+                        <button class="btn text-dark">جزییات بیشتر</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 social_offer_box  text-center">
+                    <div class="sale_box two">
+                        <span class="on_sale title_shop">تا 3 روز دیگر </span>
+                    </div>
+                    <div class="">
+                        <span class="fa fa-circle text-light"></span>
+                    </div>
+                    <div class="social_offer_title">
+                        <h4 class="m-2">پکیج گردشی</h4>
+                    </div>
+                    <div class="social_persent image_offer1">
+                        <figure class="imghvr-push-up">
+                            <img src="./img/res/transfer.jpg" height="150px">
+                            <figcaption class="p-1">
+                                <div class="text-justify">
+                                    <h3 class="text-secondary">پکیج گردشی</h3>
+                                    <!-- <span>50%</span> -->
+                                    <p class="fn_12">
+                                        خاطرات سالروز تولدتان را در هتل مجلل درویشی ماندگار سازید. این طرح ویژه
+                                        میهمانانی می باشد که
+                                        تاریخ اقامت آنها مصادف با سالروز تولد آنها باشد.
+                                    </p>
+                                    <div>
+
+                                    </div>
+                                    <br />
+                                    <!-- <button class="btn btn_gold">تماشا</button> -->
+                            </figcaption>
+                            <a href="#">30%</a>
+                        </figure>
+                    </div>
+                    <div class="">
+                        <button class="btn text-dark">جزییات بیشتر</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End social offer-->
+    </div>
+    <!--end services-->
+    <!--tools-->
+    <!--news-->
+    <div class="news_box">
+        <div class="content p-2">
+            <h5 class="p-2 text-danger">اخرین خبرهای مهم</h5>
+            <ul class="p-0">
+                <li>
+                    <a href="#" itemprop="url" dideo-checked="true">
+                        <span itemprop="name">
+                            نخست وزیر محترم ارمنستان
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" itemprop="url" dideo-checked="true">
+                        <span itemprop="name">
+                            آیین تجلیل از استاد مهدی ابراهیمیان
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" itemprop="url" dideo-checked="true">
+                        <span itemprop="name">
+                            همایش تشکل فراگیر تولیدو تجارت
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" itemprop="url" dideo-checked="true">
+                        <span itemprop="name">
+                            پروازهای خط هواپیمایی قطر از اصفهان </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" dideo-checked="true">
+                        <span itemprop="name">
+                            مراسم تجلیل از همکاران بازنشسته
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <span class="nav"></span>
+    </div>
+    <!--scroll top-->
+    <div id="stop" class="scrollTop" style="opacity: 1;">
+        <span class="fa fa-chevron-up"></span>
+    </div>
+    <!--start footer-->
+    <!-- Footer -->
+    <footer class="page-footer font-small mt-5 ">
+
+        <div class="social_network">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 text-light">شبکه اجتماعی ما برای شما</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left my-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column//company name-->
+                <div class="col-md-3 col-lg-3 col-xl-5 mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold nastaligh">شرکت سانا</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;background: #fff">
+                    <p class="text-light nastaligh">هتل عطاران در فاصله 3کیلومتری ( تقریبا 7 دقیقه ) از حرم مطهر امام
+                        رضا (ع) قرار‌دارد، روزانه
+                        6سرویس رفت و برگشت به حرم از طرف هتل تدارک دیده شده تا امکان زیارت برای زائران و مریدان را به
+                        نحو مطلوبتری فراهم .</p>
+                </div>
+                <!-- Grid column//blog -->
+                <div class="col-md-3 col-lg-3 col-xl-4 mx-auto mb-4 blog p-0 ">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">وبلاگ</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;background: #fff">
+
+                    <div class="my-1">
+                        <a class="dark-grey-text" href="#!">
+                            <img src="img/blog.jpg">
+                            <span>بازار بزرگ الماس شرق</span>
+                        </a>
+                    </div>
+
+                    <div class="my-1">
+                        <a class="dark-grey-text  my-1" href="#!">
+                            <img src="img/mosq.jpg">
+                            <span>روند شکل گیری موزه </span>
+                        </a>
+                    </div>
+
+                    <div class="my-1">
+                        <a class="dark-grey-text" href="#!">
+                            <img src="img/nat.jpg">
+                            <span>ایران کشوری طبیعی</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column//contact us -->
+                <div class="col-md-6 col-lg-6 col-xl-3  mb-md-0 mb-4 p-0">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">ارتباطات</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;background: #fff">
+                    <p class="text-light">
+                        <i class="fa fa-map-marker mr-3 text-light"></i>
+                        <span class="fn_12">
+                            نشانی : مشهد-بلوارمصلی - مصلی8 - نبش چهارراه اول پلاک8
+                        </span>
+                    </p>
+                    <p class="text-light">
+                        <i class="fa fa-envelope mr-3 text-light"></i>
+                        <span class="fn_12">
+                            ایمیل : Attarankabiri66@gmail.com
+                        </span>
+                    </p>
+                    <p class="text-light">
+                        <i class="fa fa-phone mr-3 text-light"></i>
+                        <span class="fn_12">
+                            شماره تماس : 05133689197 - 05133689197
+                        </span>
+                    </p>
+                    <p class="text-light">
+                        <i class="fa fa-clock mr-3 text-light"></i>
+                        <span class="fn_12">
+                            همه روزه 24 ساعته
+                        </span>
+                    </p>
+                    <p class="text-md-right text-sm-center">
+                        <img src="./img/enamd2.png" class="w-25 ">
+                        <img src="./img/enamad3.png" class="w-25">
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <hr style="background-color: #fff" />
+            <!-- Grid row -->
+            <div class="row text-light">
+                <div class="col-sm-12">
+                    <nav class="navbar  navbar-expand-sm ">
+                        <a class="navbar-brand" href="#" dideo-checked="true"><img src="img/logo (1).png" id="logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto fn_12">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#" dideo-checked="true">همکاری با ما<span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" dideo-checked="true">پیشنهادها</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" dideo-checked="true">وبلاگ‌ها</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="container-fluid bg_copyright d-lg-block d-md-block d-sm-none d-none">
+            <div class="container">
+                <div class="footer-copyright text-right text-light  py-3">Copyright 2018©
+                    <a class=" text-right float-left" href="https://mdbootstrap.com/education/bootstrap/">
+                        تمامی حقوق این سامانه متعلق به سفر اندیشان سبز سانا می باشد</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg_copyright d-lg-none d-md-none d-sm-block">
+            <div class="container">
+                <div class="footer-copyright text-right text-light  py-3">
+                    <a class=" text-center " href="https://mdbootstrap.com/education/bootstrap/">
+                        تمامی حقوق این سامانه متعلق به سفر اندیشان سبز سانا می باشد</a>
+                </div>
+            </div>
+        </div>
+        <!--end Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!--End footer-->
+
+
+    <!--================ start library js Area  =================-->
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="./js/OpenLayers.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/one-page.js"></script>
+    <script src="js/persian-date.js"></script>
+    <script src="js/persiandatepicker.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 160, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: {
+                    type: "circle",
+                    stroke: { width: 0, color: "#000000" },
+                    polygon: { nb_sides: 5 },
+                    image: { src: "img/github.svg", width: 100, height: 100 }
+                },
+                opacity: {
+                    value: 1,
+                    random: true,
+                    anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: false, speed: 4, size_min: 0.3, sync: false }
+                },
+                line_linked: {
+                    enable: false,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: { enable: false, rotateX: 600, rotateY: 600 }
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "bubble" },
+                    onclick: { enable: true, mode: "repulse" },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 400, line_linked: { opacity: 1 } },
+                    bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 3 },
+                    repulse: { distance: 400, duration: 0.4 },
+                    push: { particles_nb: 4 },
+                    remove: { particles_nb: 2 }
+                }
+            },
+            retina_detect: true
+        });
+
+
+    </script>
+</body>
+
+</html>
